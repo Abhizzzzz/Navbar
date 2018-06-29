@@ -1,0 +1,51 @@
+:root{
+	font-size: 16px;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: purple;
+}
+.col{
+	display: flex;
+	flex-direction: column;
+	background: purple;	
+}
+a{
+	text-decoration: none;
+}
+#home{
+	color: tomato;
+	font-size: 3rem;
+}
+.others{
+	font-size: 2.5rem;
+	color: orange;
+}
+#disabled{
+	font-size: 2.5rem;
+	color: #ccc
+}
+.button {
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 750px){
+	.c1,.c2,.c3,.c4{
+		display: none;
+	}
+	.button{
+		display: inline-flex;
+	}
+	.row{
+		flex-direction: column;
+	}
+}
